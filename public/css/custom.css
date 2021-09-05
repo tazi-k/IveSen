@@ -233,3 +233,24 @@ body{
   bottom: 0px;
   position: absolute;
 }
+
+.four{
+  background-color: #b8eeff;
+  padding-bottom: 40px;
+  position: relative;
+  text-align: center;
+}
+
+.btn-start {
+  border-radius: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 60px;
+  border: none;
+  background-color: white;
+  box-shadow: 0 0 7px gray;
+}
+
+.start-text{
+  color: black;
+}

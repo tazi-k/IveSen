@@ -68,14 +68,11 @@
             <img class="bard_img" src="../images/bard.png" alt="">
         </div>
     </section>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <section class="four">
+        <div class="four-contents">
+            <button href="" class="btn-start"><p class="start-text">はじめる</p></button>
+        </div>
+    </section>
 </body>
 
 </html>
