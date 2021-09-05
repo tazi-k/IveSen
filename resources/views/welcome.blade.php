@@ -90,7 +90,7 @@
         var trigger1Y = trigger1.getBoundingClientRect().top;
         var trigger2Y = trigger2.getBoundingClientRect().top;
 
-        if(trigger2Y - timing > 0 && 0 >= trigger1Y - timing){
+        if(0 >= trigger1Y - timing){
             body.classList.add('bg-is-pink');
         }else{
             body.classList.remove('bg-is-pink');

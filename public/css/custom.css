@@ -29,8 +29,8 @@ body{
 }
 
 .bg-is-pink .title-name{
-  background-color: #f79cc2f5;
-  color: #0037ce;
+  background-color: #ffed4f;
+  color: #f79cc2f5;
   transition-duration: 0.7s;
 }
 
@@ -73,7 +73,7 @@ body{
 
 
 .secound{
-  background-color: #FFDFF6;
+  background-color: #ffffe3;
   padding-bottom: 40px;
   position: relative;
 }
@@ -89,7 +89,7 @@ body{
 .secound-text{
   text-align: center;
   font-size: 85%;
-  color: #960075;
+  color: #f15ed2;
 }
 
 .st-1{
@@ -101,7 +101,7 @@ body{
   margin-bottom: 22px;
 }
 .st-3{
-  color: #001AFF;
+  color: #0077ff;
   margin-bottom: 22px;
 }
 .st-4{
@@ -193,7 +193,8 @@ body{
 }
 
 .third{
-  background-color: #dbfff6;
+  /* background-color: #dbfff6; */
+  background-color: white;
   padding-bottom: 40px;
   position: relative;
 }
