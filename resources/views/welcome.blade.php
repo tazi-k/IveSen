@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <section class="first">
+    <section class="first" id="first">
         <header id="header">
             <div class="title">
                 <p class="title-name">イベ戦</p>
@@ -25,7 +25,7 @@
                 標的をGETせよ
             </p>
     </section>
-    <section class="secound">
+    <section class="secound" id="secound">
         <div class="secound-text-contents">
             <h2 class="secound-title">
                 イベ戦とは...？
@@ -47,7 +47,7 @@
             <img class="back_cloud_img2" src="../images/back_cloud2.svg" alt="">
         </div>
     </section>
-    <section class="third">
+    <section class="third" id="third">
         <div class="third-contents">
             <h2 class="third-title">
                 つかい方
@@ -76,3 +76,48 @@
 </body>
 
 </html>
+
+<script>
+    // ヘッダーの色をスクロールに応じて変える処理
+    function changeColor(){
+        var timing = 70;
+        var scrollY = window.pageYOffset;
+        var body = document.body;
+
+        var trigger1 = document.getElementById('secound');
+        var trigger2 = document.getElementById('third');
+
+        var trigger1Y = trigger1.getBoundingClientRect().top;
+        var trigger2Y = trigger2.getBoundingClientRect().top;
+
+        if(trigger2Y - timing > 0 && 0 >= trigger1Y - timing){
+            body.classList.add('bg-is-pink');
+        }else{
+            body.classList.remove('bg-is-pink');
+        }
+    }
+    window.addEventListener('scroll', changeColor);
+
+    // 猫の足跡
+    function changeCat(){
+        var timing = 70;
+        var scrollY = window.pageYOffset;
+        var body = document.body;
+
+        var trigger1 = document.getElementById('first');
+        var trigger2 = document.getElementById('secound');
+
+        var trigger1Y = trigger1.getBoundingClientRect().top;
+        var trigger2Y = trigger2.getBoundingClientRect().top;
+
+        if(trigger2Y - timing < 150){
+            body.classList.add('in-cat');
+        }else if(trigger2Y - timing < 300){
+            body.classList.add('in-cat2');
+        }else{
+            body.classList.remove('in-cat');
+            body.classList.remove('in-cat2');
+        }
+    }
+    window.addEventListener('scroll', changeCat);
+</script>

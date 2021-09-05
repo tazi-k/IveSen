@@ -10,6 +10,7 @@ body{
 }
 
 
+
 .first{
   background-image: url('../images/town.svg');
   background-size: 350% 310%;
@@ -27,6 +28,12 @@ body{
   font-size: 25px;
 }
 
+.bg-is-pink .title-name{
+  background-color: #f79cc2f5;
+  color: #0037ce;
+  transition-duration: 0.7s;
+}
+
 .first-contents{
   display: inline-block;
 }
@@ -40,6 +47,16 @@ body{
   position: absolute;
   opacity: 0.89;
   filter: drop-shadow(5px 5px 5px rgb(112, 112, 112));
+  animation: top-contents 2s ease-out infinite;
+}
+
+@keyframes top-contents {
+  0%, 40%, 60%, 80% {
+    transform: scale(1.0);
+  }
+  50%, 70% {
+    transform: scale(0.95);
+  }
 }
 
 .secound-contents{
@@ -116,6 +133,11 @@ body{
   top: 18px;
   bottom: 0;
   position: absolute;
+  display: none;
+}
+
+.in-cat .cat_foot_img{
+  display: inline;
 }
 
 .cat_foot_img2{
@@ -126,6 +148,11 @@ body{
   top: 40px;
   bottom: 0;
   position: absolute;
+  display: none;
+}
+
+.in-cat2 .cat_foot_img2{
+  display: inline;
 }
 
 .back_cloud_img1{
@@ -217,13 +244,40 @@ body{
   right: 0;
   top: 20px;
   position: absolute;
+  animation: penguin_img1 2s infinite ease-in-out .8s alternate;
 }
+
+@keyframes penguin_img1 {
+  0% {
+    transform:translate(0, 0) rotate(-7deg);
+  }
+  50% {
+    transform:translate(0, -7px) rotate(0deg);
+  }
+  100% {
+    transform:translate(0, 0) rotate(7deg);
+  }
+}
+
 .penguin_img2{
   height: 18%;
   width: 23%;
   right: 40px;
   top: 20px;
   position: absolute;
+  animation: penguin_img1 2s infinite ease-in-out .8s alternate;
+}
+
+@keyframes penguin_img2 {
+  0% {
+    transform:translate(0, 0) rotate(-7deg);
+  }
+  50% {
+    transform:translate(0, -7px) rotate(0deg);
+  }
+  100% {
+    transform:translate(0, 0) rotate(7deg);
+  }
 }
 
 .bard_img{
@@ -232,6 +286,18 @@ body{
   left: 20px;
   bottom: 0px;
   position: absolute;
+  animation: bard_img 3s ease infinite;
+}
+
+@keyframes bard_img {
+  0% { transform:translateY(0) }
+  5% { transform:translateY(0) }
+  10% { transform:translateY(0) }
+  20% { transform:translateY(-5px) }
+  25% { transform:translateY(0) }
+  30% { transform:translateY(-5px) }
+  50% { transform:translateY(0) }
+  100% { transform:translateY(0) }
 }
 
 .four{
