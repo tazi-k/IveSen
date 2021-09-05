@@ -41,16 +41,38 @@
                 <p class="st-8">勝ちましょう！</p>
                 <p class="st-9">＊全て<span class="st-10">無料</span>です</p>
             </div>
+            <img class="cat_foot_img" src="../images/cat_foot.svg" alt="">
+            <img class="cat_foot_img2" src="../images/cat_foot.svg" alt="">
+            <img class="back_cloud_img1" src="../images/back_cloud1.svg" alt="">
+            <img class="back_cloud_img2" src="../images/back_cloud2.svg" alt="">
         </div>
     </section>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <section class="third">
+        <div class="third-contents">
+            <h2 class="third-title">
+                つかい方
+            </h2>
+            <div class="card">
+                <div class="card-text">
+                    <p class="t-t1">募集する・探す</p>
+                    <p class="down-mark">↓</p>
+                    <p class="t-t2">共戦希望がくる・だす</p>
+                    <p class="down-mark">↓</p>
+                    <p class="t-t3">ごめんね・よろしく</p>
+                    <p class="down-mark">↓</p>
+                    <p class="t-t4">トークへ<br>（よろしく の場合）</p>
+                </div>
+            </div>
+            <img class="penguin_img1" src="../images/penguin.png" alt="">
+            <img class="penguin_img2" src="../images/penguin.png" alt="">
+            <img class="bard_img" src="../images/bard.png" alt="">
+        </div>
+    </section>
+    <section class="four">
+        <div class="four-contents">
+            <button href="" class="btn-start"><p class="start-text">はじめる</p></button>
+        </div>
+    </section>
 </body>
 
 </html>
