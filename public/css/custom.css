@@ -39,6 +39,7 @@ body{
   margin: auto;
   position: absolute;
   opacity: 0.89;
+  filter: drop-shadow(5px 5px 5px rgb(112, 112, 112));
 }
 
 .secound-contents{
@@ -57,6 +58,7 @@ body{
 .secound{
   background-color: #FFDFF6;
   padding-bottom: 40px;
+  position: relative;
 }
 
 .secound-title{
@@ -104,4 +106,130 @@ body{
 }
 .st-10{
   color: #001AFF;
+}
+
+.cat_foot_img{
+  height: 8%;
+  width: 8%;
+  left: 16px;
+  right: 0;
+  top: 18px;
+  bottom: 0;
+  position: absolute;
+}
+
+.cat_foot_img2{
+  height: 8%;
+  width: 8%;
+  left: 50px;
+  right: 0;
+  top: 40px;
+  bottom: 0;
+  position: absolute;
+}
+
+.back_cloud_img1{
+  height: 30%;
+  width: 43%;
+  right: 0;
+  top: 10px;
+  bottom: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+.back_cloud_img2{
+  height: 30%;
+  width: 43%;
+  left: 20px;
+  right: 0;
+  bottom: 10px;
+  position: absolute;
+}
+
+.secound-title{
+  z-index: 2;
+  position: relative;
+}
+
+.secound-text{
+  z-index: 2;
+  position: relative;
+}
+
+.third-title{
+  margin-top: 0;
+  padding-top: 40px;
+  text-align: center;
+  color: #004596;
+  font-family: ヒラギノ丸ゴ Pro;
+}
+
+.third{
+  background-color: #dbfff6;
+  padding-bottom: 40px;
+  position: relative;
+}
+
+.card{
+  border: solid 4px #5eccff;
+  background-color: white;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  box-shadow: 0 0 7px gray;
+}
+
+.card-text p{
+  color: #0066ff;
+}
+
+.card-text{
+  text-align: center;
+}
+
+.down-mark{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.t-t1{
+  margin-bottom: 5px;
+}
+.t-t2{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.t-t3{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.t-t4{
+  margin-top: 5px;
+}
+
+.penguin_img1{
+  height: 18%;
+  width: 23%;
+  left: 40px;
+  right: 0;
+  top: 20px;
+  position: absolute;
+}
+.penguin_img2{
+  height: 18%;
+  width: 23%;
+  right: 40px;
+  top: 20px;
+  position: absolute;
+}
+
+.bard_img{
+  height: 18%;
+  width: 23%;
+  left: 20px;
+  bottom: 0px;
+  position: absolute;
 }
