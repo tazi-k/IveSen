@@ -8,6 +8,7 @@
 
     {{-- CSSの呼び出し --}}
     <link rel="stylesheet" href="css/custom.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 
     <title>IveSen</title>
 </head>
@@ -17,6 +18,15 @@
         <header id="header">
             <div class="title">
                 <p class="title-name">イベ戦</p>
+            </div>
+            <div class="menu-btn">
+                <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+            </div>
+            <div class="menu">
+                <div class="menu-item">TOP</div>
+                <div class="menu-item">ABOUT</div>
+                <div class="menu-item">BLOG</div>
+                <div class="menu-item">CONTACT</div>
             </div>
         </header>
             <img class="top-contents" src="images/top_cloud.svg">
@@ -68,56 +78,17 @@
             <img class="bard_img" src="../images/bard.png" alt="">
         </div>
     </section>
-    <section class="four">
+    <section class="four" id="four">
         <div class="four-contents">
             <button href="" class="btn-start"><p class="start-text">はじめる</p></button>
+            <img class="b-cat" src="../images/black_cat.png" alt="">
         </div>
     </section>
+    <section class="last" id="last">
+        <div class="last-contents">
+            <p class="signature">Copyright ©︎ 2021 Kyosuke Tajima</p>
+        </div>
+    </section>
+    <script type="text/javascript" src="../../js/welcome.js"></script>
 </body>
-
 </html>
-
-<script>
-    // ヘッダーの色をスクロールに応じて変える処理
-    function changeColor(){
-        var timing = 70;
-        var scrollY = window.pageYOffset;
-        var body = document.body;
-
-        var trigger1 = document.getElementById('secound');
-        var trigger2 = document.getElementById('third');
-
-        var trigger1Y = trigger1.getBoundingClientRect().top;
-        var trigger2Y = trigger2.getBoundingClientRect().top;
-
-        if(0 >= trigger1Y - timing){
-            body.classList.add('bg-is-pink');
-        }else{
-            body.classList.remove('bg-is-pink');
-        }
-    }
-    window.addEventListener('scroll', changeColor);
-
-    // 猫の足跡
-    function changeCat(){
-        var timing = 70;
-        var scrollY = window.pageYOffset;
-        var body = document.body;
-
-        var trigger1 = document.getElementById('first');
-        var trigger2 = document.getElementById('secound');
-
-        var trigger1Y = trigger1.getBoundingClientRect().top;
-        var trigger2Y = trigger2.getBoundingClientRect().top;
-
-        if(trigger2Y - timing < 150){
-            body.classList.add('in-cat');
-        }else if(trigger2Y - timing < 300){
-            body.classList.add('in-cat2');
-        }else{
-            body.classList.remove('in-cat');
-            body.classList.remove('in-cat2');
-        }
-    }
-    window.addEventListener('scroll', changeCat);
-</script>
