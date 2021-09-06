@@ -8,15 +8,25 @@
 
     {{-- CSSの呼び出し --}}
     <link rel="stylesheet" href="css/custom.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 
     <title>IveSen</title>
 </head>
 
 <body>
-    <section class="first">
+    <section class="first" id="first">
         <header id="header">
             <div class="title">
                 <p class="title-name">イベ戦</p>
+            </div>
+            <div class="menu-btn">
+                <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+            </div>
+            <div class="menu">
+                <div class="menu-item">TOP</div>
+                <div class="menu-item">ABOUT</div>
+                <div class="menu-item">BLOG</div>
+                <div class="menu-item">CONTACT</div>
             </div>
         </header>
             <img class="top-contents" src="images/top_cloud.svg">
@@ -25,7 +35,7 @@
                 標的をGETせよ
             </p>
     </section>
-    <section class="secound">
+    <section class="secound" id="secound">
         <div class="secound-text-contents">
             <h2 class="secound-title">
                 イベ戦とは...？
@@ -47,7 +57,7 @@
             <img class="back_cloud_img2" src="../images/back_cloud2.svg" alt="">
         </div>
     </section>
-    <section class="third">
+    <section class="third" id="third">
         <div class="third-contents">
             <h2 class="third-title">
                 つかい方
@@ -68,11 +78,17 @@
             <img class="bard_img" src="../images/bard.png" alt="">
         </div>
     </section>
-    <section class="four">
+    <section class="four" id="four">
         <div class="four-contents">
             <button href="" class="btn-start"><p class="start-text">はじめる</p></button>
+            <img class="b-cat" src="../images/black_cat.png" alt="">
         </div>
     </section>
+    <section class="last" id="last">
+        <div class="last-contents">
+            <p class="signature">Copyright ©︎ 2021 Kyosuke Tajima</p>
+        </div>
+    </section>
+    <script type="text/javascript" src="../../js/welcome.js"></script>
 </body>
-
 </html>
