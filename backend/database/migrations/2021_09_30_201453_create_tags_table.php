@@ -14,8 +14,14 @@ class CreateTagsTable extends Migration
     public function up()
     {
         Schema::create('tags', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('ivent_id');
+            $table->string('tag');
             $table->timestamps();
+
+            $table->foreign('ivent_id')
+                ->references('id')
+                ->on('ivents')
+                ->onDelete('cascade');
         });
     }
 

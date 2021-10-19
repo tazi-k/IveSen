@@ -14,7 +14,8 @@ class CreatePrefecturesTable extends Migration
     public function up()
     {
         Schema::create('prefectures', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
+            $table->string('prefecture_name');
             $table->timestamps();
         });
     }
