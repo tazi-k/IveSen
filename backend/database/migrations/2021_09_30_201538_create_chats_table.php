@@ -14,8 +14,8 @@ class CreateChatsTable extends Migration
     public function up()
     {
         Schema::create('chats', function (Blueprint $table) {
-            $table->bigIncrements('user_id');
-            $table->bigIncrements('room_id');
+            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('room_id');
             
             $table->foreign('user_id')
             ->references('id')
@@ -26,7 +26,7 @@ class CreateChatsTable extends Migration
             ->references('id')
             ->on('rooms')
             ->onDelete('cascade');
-            
+
             $table->string('chat');
             $table->timestamps();
         });

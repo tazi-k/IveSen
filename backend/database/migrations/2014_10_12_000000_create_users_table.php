@@ -23,13 +23,13 @@ class CreateUsersTable extends Migration
             $table->string('sns')->nullable();
             $table->text('profile')->nullable();
             $table->unsignedBigInteger('prefectures_id')->nullable();
+            $table->timestamps();
 
             $table->foreign('prefectures_id')
                 ->references('id')
                 ->on('prefectures')
                 ->onDelete('cascade');
 
-            $table->timestamp();
         });
     }
 

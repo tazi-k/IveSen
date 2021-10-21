@@ -14,8 +14,8 @@ class CreateRoomUserTable extends Migration
     public function up()
     {
         Schema::create('room_user', function (Blueprint $table) {
-            $table->bigIncrements('user_id');
-            $table->bigIncrements('room_id');
+            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('room_id');
 
             $table->foreign('user_id')
                 ->references('id')
