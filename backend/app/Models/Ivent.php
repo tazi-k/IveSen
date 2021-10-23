@@ -7,5 +7,26 @@ use Illuminate\Database\Eloquent\Model;
 
 class Ivent extends Model
 {
-    use HasFactory;
+    protected $fillable = [
+        'draft_user_id',
+        'ivent_name',
+        'ivent_date',
+        'number_of_people',
+        'message',
+    ];
+
+    public function users()
+    {
+        return $this->hasOne('App\User','draft_user_id');
+    }
+
+    public function tags()
+    {
+        return $this->belongsTo('App\Tag');
+    }
+
+    public function matchings()
+    {
+        return $this->belongsTo('App\Matching');
+    }
 }

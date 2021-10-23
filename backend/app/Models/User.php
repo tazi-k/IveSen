@@ -18,8 +18,13 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name',
+        'sex',
+        'age',
         'email',
         'password',
+        'sns',
+        'profile',
+        'prefecture_id',
     ];
 
     /**
@@ -40,4 +45,24 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function prefectures()
+    {
+        return $this->hasOne('App\Prefecture','prefecture_id');
+    }
+
+    public function images()
+    {
+        return $this->belongsToMany('App\Image')->withTimestamps();;
+    }
+
+    public function rooms()
+    {
+        return $this->hasMany('App\Room')->withTimestamps();
+    }
+
+    public function chats()
+    {
+        return $this->hasMany('App\Chat')->withTimestamps();
+    }
 }

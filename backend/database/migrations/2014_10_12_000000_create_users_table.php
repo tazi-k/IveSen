@@ -22,10 +22,10 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->string('sns')->nullable();
             $table->text('profile')->nullable();
-            $table->unsignedBigInteger('prefectures_id')->nullable();
+            $table->unsignedBigInteger('prefecture_id')->nullable();
             $table->timestamps();
 
-            $table->foreign('prefectures_id')
+            $table->foreign('prefecture_id')
                 ->references('id')
                 ->on('prefectures')
                 ->onDelete('cascade');

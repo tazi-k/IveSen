@@ -7,5 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Image extends Model
 {
-    use HasFactory;
+    protected $fillable = [
+        'image_path'
+    ];
+
+    public function users()
+    {
+        return $this->belongsToMany('App\User')->withTimestamps();
+    }
 }

@@ -7,5 +7,18 @@ use Illuminate\Database\Eloquent\Model;
 
 class Chat extends Model
 {
-    use HasFactory;
+    protected $fillable = [
+        'room_id',
+        'chat',
+    ];
+
+    public function users()
+    {
+        return $this->hasOne('App\User','user_id');
+    }
+
+    public function rooms()
+    {
+        return $this->hasMany('App\Room','room_id');
+    }
 }

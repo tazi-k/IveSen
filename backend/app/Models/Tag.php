@@ -7,5 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Tag extends Model
 {
-    use HasFactory;
+    protected $fillable = [
+        'ivent_id',
+        'tag',
+    ];
+
+    public function ivents()
+    {
+        return $this->hasOne('App\Ivents','ivent_id');
+    }
 }
