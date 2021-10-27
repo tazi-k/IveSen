@@ -23,10 +23,9 @@
                 <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
             </div>
             <div class="menu">
-                <div class="menu-item">TOP</div>
-                <div class="menu-item">ABOUT</div>
-                <div class="menu-item">BLOG</div>
-                <div class="menu-item">CONTACT</div>
+                <div class="menu-item">新規登録</div>
+                <div class="menu-item">ログイン</div>
+                <div class="menu-item">募集一覧</div>
             </div>
         </header>
             <img class="top-contents" src="images/top_cloud.svg">
