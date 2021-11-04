@@ -6,6 +6,11 @@
     <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
+    <img class="top-contents" src="images/top_cloud.svg">
+    <p class="secound-contents">
+        同人イベントで<br>
+        標的をGETせよ
+    </p>
     <section class="secound" id="secound">
         <div class="secound-text-contents">
             <h2 class="secound-title">
@@ -60,7 +65,6 @@
             <p class="signature">Copyright ©︎ 2021 Kyosuke Tajima</p>
         </div>
     </section>
-    <script type="text/javascript" src="../../js/welcome.js"></script>
 </body>
 </html>
 @endsection

@@ -12,7 +12,7 @@
 
     <title>IveSen</title>
 </head>
-
+<body>
 <section class="first" id="first">
   <header id="header">
       <div class="title">
@@ -23,14 +23,12 @@
       </div>
       <div class="menu">
           <a href="{{ route('register') }}" class="menu-item">新規登録</a>
-          <div class="menu-item">ログイン</div>
-          <div class="menu-item">募集一覧</div>
+          <a href="{{ route('login') }}" class="menu-item">ログイン</a>
+          <a href="{{ route('users.index') }}" class="menu-item">募集一覧</a>
       </div>
   </header>
-      <img class="top-contents" src="images/top_cloud.svg">
-      <p class="secound-contents">
-          同人イベントで<br>
-          標的をGETせよ
-      </p>
 </section>
+
+<script type="text/javascript" src="../../js/welcome.js"></script>
+</body>
 @yield('content')

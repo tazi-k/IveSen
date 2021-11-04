@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
+@push('css')
+    <link rel="stylesheet" href="css/custom.css">
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
