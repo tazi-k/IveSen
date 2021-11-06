@@ -1,10 +1,20 @@
-@extends('layout.app')
+@extends('layouts.app')
 
 @section('content')
+
 <head>
     @push('css')
     <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/header.css">
+
+    <style type="text/css">
+        #header {
+        position: fixed;
+        z-index: 999;
+        }
+    </style>
 </head>
+
 <body>
     <img class="top-contents" src="images/top_cloud.svg">
     <p class="secound-contents">
@@ -56,7 +66,9 @@
     </section>
     <section class="four" id="four">
         <div class="four-contents">
-            <button href="" class="btn-start"><p class="start-text">はじめる</p></button>
+            <button href="" class="btn-start">
+                <p class="start-text">はじめる</p>
+            </button>
             <img class="b-cat" src="../images/black_cat.png" alt="">
         </div>
     </section>
@@ -66,5 +78,6 @@
         </div>
     </section>
 </body>
+
 </html>
 @endsection
