@@ -1,0 +1,40 @@
+body{
+  background-color: rgb(203, 255, 181);
+}
+
+#header{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+.card-body{
+  /* box-shadow: 0 0 13px gray; */
+  box-shadow: -5px -2px 20px 0px rgba(255, 255, 255, 0.5), 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+  background-color: rgb(193, 247, 170);
+}
+
+.card-title{
+  text-align: center;
+  font-size: 17px;
+  margin-top: 20px;
+}
+
+input{
+  border-radius: 25px !important;
+  border: none !important;
+  box-shadow: inset -5px -5px 10px 0px rgba(255, 255, 255, 0.5), inset 5px 5px 10px 0px rgba(44, 44, 44, 0.219) !important;
+}
+
+.btn-click{
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: -5px -5px 10px 0px rgba(255, 255, 255, 0.5), 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+  margin-top: 40px;
+}
+
+.btn-pass{
+  display: block;
+  margin-top: 20px;
+  font-size: 13px;
+}

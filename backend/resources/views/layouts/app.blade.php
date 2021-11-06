@@ -29,7 +29,7 @@
     <section class="first" id="first">
         <header id="header">
             <div class="title">
-                <p class="title-name">イベ戦</p>
+                <a href="/" class="title-name">イベ戦</a>
             </div>
             <div class="menu-btn">
                 <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
