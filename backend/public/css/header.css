@@ -7,9 +7,11 @@
   margin: 0;
   padding: 16px 16px;
   font-size: 25px;
+  /* text-shadow: 0.3px 1px 2px #7a7a7a; */
+  display: inline-block;
 }
 
-.bg-is-pink .title-name{
+.bg-is-pink .title{
   background-color: #ffed4f;
   color: #f79cc2f5;
   transition-duration: 0.7s;

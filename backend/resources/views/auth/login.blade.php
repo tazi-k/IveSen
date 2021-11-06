@@ -3,15 +3,15 @@
 @section('content')
 @push('css')
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/login.css">
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('ログイン') }}</div>
+                <div class="card-title">{{ __('ログイン') }}</div>
 
-                <div class="card-body">
-                    <form method="POST" action="{{ route('login') }}">
-                        @csrf
+                <form method="POST" action="{{ route('login') }}">
+                    @csrf
+                    <div class="card-body">
 
                         <div class="form-group row">
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('メールアドレス') }}</label>
@@ -40,22 +40,21 @@
                                 @enderror
                             </div>
                         </div>
+                    </div>
+                    <div class="form-group row mb-0 text-center">
+                        <div class="col-md-8 offset-md-4">
+                            <button type="submit" class="btn btn-click">
+                                {{ __('ログイン') }}
+                            </button>
 
-                        <div class="form-group row mb-0">
-                            <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('ログイン') }}
-                                </button>
-
-                                @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('パスワードをお忘れですか？') }}
-                                    </a>
-                                @endif
-                            </div>
+                            @if (Route::has('password.request'))
+                                <a class="btn btn-link btn-pass" href="{{ route('password.request') }}">
+                                    {{ __('パスワードをお忘れですか？') }}
+                                </a>
+                            @endif
                         </div>
-                    </form>
-                </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
