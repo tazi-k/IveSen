@@ -3,14 +3,6 @@ body{
   padding: 0;
 }
 
-#header {
-	position: fixed;
-	width: 100%;
-	z-index: 999;
-}
-
-
-
 .first{
   background-image: url('../images/town.svg');
   background-size: 350% 310%;
@@ -19,19 +11,6 @@ body{
   background-color: #DFFFFD;
   background-position: right 10% bottom 53%;
   position: relative;
-}
-
-.title-name{
-  color: #FFABCE;
-  margin: 0;
-  padding: 16px 16px;
-  font-size: 25px;
-}
-
-.bg-is-pink .title-name{
-  background-color: #ffed4f;
-  color: #f79cc2f5;
-  transition-duration: 0.7s;
 }
 
 .top-contents{
@@ -359,64 +338,4 @@ body{
 
 .signature{
   font-size: 2px;
-}
-
-.menu-btn{
-  position: fixed;
-  top: 15px;
-  right: 20px;
-  z-index: 2;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #FFABCE;
-  vertical-align: middle;
-}
-
-.menu{
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 1;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: #555;
-}
-.menu-item{
-  width: 100%;
-  height: auto;
-  padding: .5em 1em;
-  text-align: center;
-  color: #fff;
-  box-sizing: border-box;
-}
-
-/* アニメーション前のメニューの状態 */
-.menu{
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity .5s linear;
-}
-/* アニメーション後のメニューの状態 */
-.menu.is-active{
-  pointer-events: auto;
-  opacity: 1;
-}
-
-.menu-btn.active{
-  pointer-events: auto;
-  opacity: 1;
-  animation:0.5s linear 1 active;
-  animation-fill-mode: forwards;
-}
-
-@keyframes active{
-  0%{ transform:rotate(0);}
-  100%{ transform:rotate(90deg); }
 }

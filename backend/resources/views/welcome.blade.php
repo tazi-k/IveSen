@@ -1,11 +1,26 @@
-@extends('layout.app')
+@extends('layouts.app')
 
 @section('content')
+
 <head>
     @push('css')
     <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/header.css">
+
+    <style type="text/css">
+        #header {
+        position: fixed;
+        z-index: 999;
+        }
+    </style>
 </head>
+
 <body>
+    <img class="top-contents" src="images/top_cloud.svg">
+    <p class="secound-contents">
+        同人イベントで<br>
+        標的をGETせよ
+    </p>
     <section class="secound" id="secound">
         <div class="secound-text-contents">
             <h2 class="secound-title">
@@ -51,7 +66,9 @@
     </section>
     <section class="four" id="four">
         <div class="four-contents">
-            <button href="" class="btn-start"><p class="start-text">はじめる</p></button>
+            <button href="" class="btn-start">
+                <p class="start-text">はじめる</p>
+            </button>
             <img class="b-cat" src="../images/black_cat.png" alt="">
         </div>
     </section>
@@ -60,7 +77,7 @@
             <p class="signature">Copyright ©︎ 2021 Kyosuke Tajima</p>
         </div>
     </section>
-    <script type="text/javascript" src="../../js/welcome.js"></script>
 </body>
+
 </html>
 @endsection
