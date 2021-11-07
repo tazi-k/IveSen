@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Auth;
-use App\User;
+use App\Models\User;
+use App\Models\Prefecture;
 
 class UserController extends Controller
 {
@@ -15,12 +16,15 @@ class UserController extends Controller
 
     public function create()
     {
-        return view('users.create');
+        $prefectures = null;
+        $prefectures = Prefecture::All();
+
+        return view('users.create', compact('prefectures'));
     }
 
     public function store(Request $request)
     {
-        //
+        dd($request);
     }
 
     public function show($id)

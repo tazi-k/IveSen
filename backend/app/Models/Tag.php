@@ -14,6 +14,6 @@ class Tag extends Model
 
     public function ivents()
     {
-        return $this->hasOne('App\Ivents','ivent_id');
+        return $this->hasOne('App\Models\Ivents','ivent_id');
     }
 }

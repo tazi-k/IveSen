@@ -49,21 +49,21 @@ class User extends Authenticatable
 
     public function prefectures()
     {
-        return $this->hasOne('App\Prefecture','prefecture_id');
+        return $this->hasOne('App\Models\Prefecture','prefecture_id');
     }
 
     public function images()
     {
-        return $this->belongsToMany('App\Image')->withTimestamps();;
+        return $this->belongsToMany('App\Models\Image')->withTimestamps();;
     }
 
     public function rooms()
     {
-        return $this->hasMany('App\Room')->withTimestamps();
+        return $this->hasMany('App\Models\Room')->withTimestamps();
     }
 
     public function chats()
     {
-        return $this->hasMany('App\Chat')->withTimestamps();
+        return $this->hasMany('App\Models\Chat')->withTimestamps();
     }
 }

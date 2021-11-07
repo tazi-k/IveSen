@@ -14,6 +14,6 @@ class Room extends Model
 
     public function chats()
     {
-        return $this->belongsTo('App\Chat');
+        return $this->belongsTo('App\Models\Chat');
     }
 }

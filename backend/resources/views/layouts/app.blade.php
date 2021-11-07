@@ -47,7 +47,7 @@
                 <a href="{{ route('users.index') }}" class="menu-item">マッチ状況</a>
                 <a class="menu-item" onclick="event.preventDefault();
                     document.getElementById('logout-form').submit();">
-                    Logout
+                    ログアウト
                 </a>
                 <form id='logout-form' action={{ route('logout')}} method="POST" style="display: none;">
                     @csrf
