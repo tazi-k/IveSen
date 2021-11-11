@@ -17,16 +17,16 @@ class Ivent extends Model
 
     public function users()
     {
-        return $this->hasOne('App\User','draft_user_id');
+        return $this->hasOne('App\Models\User','draft_user_id');
     }
 
     public function tags()
     {
-        return $this->belongsTo('App\Tag');
+        return $this->belongsTo('App\Models\Tag');
     }
 
     public function matchings()
     {
-        return $this->belongsTo('App\Matching');
+        return $this->belongsTo('App\Models\Matching');
     }
 }

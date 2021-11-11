@@ -14,11 +14,11 @@ class Chat extends Model
 
     public function users()
     {
-        return $this->hasOne('App\User','user_id');
+        return $this->hasOne('App\Models\User','user_id');
     }
 
     public function rooms()
     {
-        return $this->hasMany('App\Room','room_id');
+        return $this->hasMany('App\Models\Room','room_id');
     }
 }

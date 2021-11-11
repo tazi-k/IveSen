@@ -16,6 +16,6 @@ class Matching extends Model
 
     public function ivents()
     {
-        return $this->hasOne('App\Ivent','ivent_id');
+        return $this->hasOne('App\Models\Ivent','ivent_id');
     }
 }
